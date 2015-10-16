@@ -3,12 +3,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Yellow River</title>
 </head>
-<body>
+<body style="margin-left: 20px;">
+<h2>Shipping Information</h2>
 <form:form modelAttribute="shippingInfo" method="post" action="/YellowRiver/purchase/submitShipping">
-    <table>
+    <table class="table table-striped">
         <tr>
 	     <td>Name:</td>
          <td><form:input type="text" path="name"/></td>
@@ -34,7 +36,7 @@
          <td><form:input type="text" path="zip"/></td>
         </tr>
     </table>
-    <input type="submit" name="Submit" value="Submit" />
+    <input type="submit" class="btn-primary" name="Submit" value="Submit" />
 </form:form>
 </body>
 </html>

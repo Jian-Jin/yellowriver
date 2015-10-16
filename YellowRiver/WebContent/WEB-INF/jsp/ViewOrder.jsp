@@ -4,12 +4,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Yellow River</title>
 </head>
-<body>
+<body style="margin-left: 20px;">
+<br>
+<form method="POST" action="/YellowRiver/purchase/ConfirmOrder">
+<input type="submit" class="btn-primary" value="Confirm" name="Confirm"/>
+</form>
 <h2>Order Information</h2>
-<table>
+<table class="table table-striped">
 <tr>
  <td>BookName</td>
  <td>Quantity</td>
@@ -28,7 +33,7 @@
 </tr>
 </table>
 <h2>Payment Information</h2>
-<table>
+<table class="table table-striped">
 <tr>
 <td>Credit Card Number:</td>
 <td>${paymentInfo.credit_card_number}</td>
@@ -48,7 +53,7 @@
 </table>
 
 <h2>Shiping Information</h2>
-<table>
+<table class="table table-striped">
 <tr>
  <td>Name:</td>
  <td>${shippingInfo.name}</td>
@@ -74,9 +79,5 @@
 <td>${shippingInfo.zip}</td>
 </tr>
 </table>
-
-<form method="POST" action="/YellowRiver/purchase/ConfirmOrder">
-<input type="submit" value="Confirm" name="Confirm"/>
-</form>
 </body>
 </html>

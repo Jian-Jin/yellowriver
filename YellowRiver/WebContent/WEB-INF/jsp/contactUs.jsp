@@ -8,7 +8,13 @@
 </head>
 <body>
 <center>
-copyright@2015
+<h2>
+Contact Information
+</h2>
+Phone: 612-345-6789<br>
+Email: Contact@YellowRiver.com<br>
+Address: Dresee Lab, Ohio State University,<br>
+        Columbus, Ohio, 43210
 </center>
 </body>
 </html>

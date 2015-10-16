@@ -8,6 +8,12 @@
 <title>Yellow River</title>
 </head>
 <body>
+<div class="confirmation">
+<center>
+<br>
+<br>
 <h2>Thank you for your purchase. We will mail your order as soon as possible</h2>
+</center>
+</div>
 </body>
 </html>
